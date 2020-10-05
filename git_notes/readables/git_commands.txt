@@ -1,0 +1,80 @@
+$ pwd   (present working directory)
+$ ls (list out all the things present in a directory or folder)
+$cd .. (goes on folder back from PWD)
+$ cd desktop
+$ cd /c 
+$ git
+$ git config --list (shows the configuration list)
+$ git config --global user.name "user_name" (configures user_name)
+$ git config --global user.email "email" (configures email)
+$ git config --global core.editor vim  (configures core editor)
+$ git config --list
+$ git config --global --edit (edit the configurations i.e. delete the user_name, email, etc which is configured. insert key -> edit, esc key + :wq ->save and exit)
+$ git status (gives the status of tracking of git repository (run this command to frequently to see the status))
+$ git init (makes a git repository i.e. add .git folder which is responsible to track the modification of git repo.(keeps all the history of modification in project))
+$ git status
+$ git add --a (stage all the files to staging area)
+$ git add . (stage all the files to staging area)
+$ git add filename (stage the specified file in staging area)
+$ git commit -m "commit message" (commit the changes)
+$ git log (shows the log of the commits)
+$ rm -rf filename (deletes a file or folder. Ex: $ rm -rf .git -deletes a git repository)
+$ git clone https://github.com/dropinamit/git_tutorial.git (clones a git repository)
+$ touch .gitignore (creates a file with filename specified)
+$ git diff (shows the difference between staged and modified (create a file->git status->stage->edit the file again->git status->run git diff to see difference))
+$ git diff --staged (Compares your previous commit with your current staging area)
+$ git commit -a -m "skipped the staging area i.e Direct Commit" (stage the modified files and commit)
+$ rm filename (deletes a file)
+$ git mv first.txt first_rename.txt (renames a file)
+$ git rm --cached first_rename.txt (this command won't delete the file else git will not track this file. i.e. the file will come under Untracked files)
+$ git log -p (shows commit logs with the diff)
+$ git log -p -2 (shows 2 commit logs with their differences)
+$ git log --stat (shows the status of the commit in short form)
+$ git log --pretty=oneline (shows all the commits in one line)
+$ git log --pretty=short (shows all the commits in short)
+$ git log --pretty=full (shows all the commits in described manner)
+$ git log --since=2.days (shows all the commits within 2 days)
+$ git log --since=2.weeks
+$ git log --since=2.months
+$ git log --since=2.years
+$ git log --pretty=format:"%h -- %an" (shows all the commits with commit hash and author name)
+$ git log --pretty=format:"%h -- %ae" (shows all the commits with commit hash and email)
+$ git commit --amend (amend or alter or edit or imporve the commit by changing the commit message or may be modifying the files in the current commit)
+$ git restore --staged first_rename.txt (unstage a staged file)
+$ git checkout -- first_rename.txt (restore the file to previous stage or remove the file before staging)
+$ git checkout -f (restores all the modified files to the pervious commit)
+$ git remote add origin https://github.com/dropinamit/demo_repo.git (Here we have added a remote named origin which is having the git repository link)
+$ git remote (shows remote repository)
+$ git remote -v (shows the repository to pull and push)
+$ git push origin master (pushes the local commits to GITHUB respository(master branch))
+$ git push -u origin master (pushes the local commits to GITHUB repository (master branch))
+$ git restore second.txt (to discard the changes in working directory)
+$ git checkout -b develop (creates a new branch and switch to it)
+$ git branch -m amit_upadhayay (renames the current working branch. Ex: $ git branch -m new_branch_name)
+$ git branch -m old_branch_name new_branch_name (renames a branch)
+$ git branch (shows the available branches)
+$ git merge develop (merging the branch.)
+$ git push origin develop:develop_github (pushing the local commit of develop branch to develop_github branch at GITHUB repo)
+$ git branch -d develop (to delete a branch if merged)
+$ git branch -D new_develop (delete a branch even if it is not merged)
+$ git push -d origin develop (deletes branch in GITHUB repository)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
